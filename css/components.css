@@ -193,6 +193,7 @@
 .site-footer a { color: var(--c-chalk); text-decoration-color: var(--c-amber); text-underline-offset: 0.25em; }
 .site-footer a:hover { color: var(--c-amber); }
 .site-footer__legal { margin-top: clamp(2.5rem, 6vw, 4.5rem); padding-top: 1.25rem; border-top: 1px solid var(--c-rule); max-width: none; }
+.WaterMark { margin-top: 0.75rem; color: var(--c-steel); font-size: 0.75rem; letter-spacing: 0.04em; }
 
 @media (max-width: 48em) {
   .site-footer__grid { grid-template-columns: 1fr 1fr; }
