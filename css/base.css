@@ -1,0 +1,122 @@
+/* ==========================================================================
+   BASE — reset, typografia, utility
+   ========================================================================== */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h) + 1rem);
+}
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+html.menu-lock { overflow: hidden; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--c-asphalt);
+  color: var(--c-chalk);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure, address { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+address { font-style: normal; }
+img, svg { display: block; max-width: 100%; height: auto; }
+button { font: inherit; color: inherit; }
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+p { max-width: 62ch; text-wrap: pretty; }
+
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+
+::selection { background: var(--c-amber); color: var(--c-asphalt); }
+
+/* ---- Focus ---- */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+/* ---- Rozloženie ---- */
+.container {
+  width: min(100% - 2 * var(--gutter), var(--max));
+  margin-inline: auto;
+}
+.section { padding-block: var(--section-y); }
+
+/* ---- Utility ---- */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.skip-link {
+  position: fixed; z-index: 100; left: 1rem; top: 1rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--c-amber); color: var(--c-asphalt);
+  font-weight: 700; text-decoration: none;
+  opacity: 0; pointer-events: none; transform: translateY(-200%);
+}
+.skip-link:focus { opacity: 1; pointer-events: auto; transform: none; }
+
+/* Malý technický štítok (používa sa málo — len tam, kde nesie informáciu) */
+.tag {
+  display: inline-flex; align-items: center; gap: 0.75rem;
+  font-size: 0.8125rem; font-weight: 600; font-stretch: 75%;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--c-amber);
+}
+.tag::before { content: ""; width: 2.5rem; height: 2px; background: currentColor; }
+
+/* Nadpis sekcie */
+.h-section {
+  font-size: clamp(2.75rem, 1rem + 6vw, 6.5rem);
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.link {
+  color: var(--c-chalk);
+  text-decoration-color: var(--c-amber);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.25em;
+  transition: color 0.2s;
+}
+.link:hover { color: var(--c-amber); }
+
+/* ---- Vstupná animácia (jedna, len hero) ---- */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(1.5rem); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.reveal {
+  animation: rise 0.9s var(--ease-out) both;
+  animation-delay: calc(var(--i, 0) * 90ms + 80ms);
+}
+.reveal--fade { animation-name: fade; animation-duration: 1.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+}

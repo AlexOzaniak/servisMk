@@ -1,0 +1,34 @@
+/* ==========================================================================
+   TOKENS — jediné miesto, kde sa mení farba, písmo a rozostupy
+   ========================================================================== */
+:root {
+  /* Farby */
+  --c-asphalt: #1b1c1e;   /* pozadie */
+  --c-bay:     #232528;   /* zvýšená plocha */
+  --c-rule:    #3b3e43;   /* tenké čiary */
+  --c-steel:   #969aa1;   /* sekundárny text (kontrast ≥ 5:1 na asfalte) */
+  --c-chalk:   #ece9e2;   /* hlavný text */
+  --c-amber:   #f4a81d;   /* akcent: CTA, štítky, číslice, hover */
+  --c-amber-hot: #ffc24d;
+
+  /* Písma */
+  --font-display: "Big Shoulders Display", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --font-body:    "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Veľkosti textu */
+  --fs-body:  clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --fs-small: 0.875rem;
+  --fs-lead:  clamp(1.55rem, 1.1rem + 1.8vw, 2.6rem);
+
+  /* Rozloženie */
+  --gutter:   clamp(1.25rem, 4vw, 4rem);
+  --max:      90rem;
+  --header-h: 4.25rem;
+  --section-y: clamp(4.5rem, 10vw, 9rem);
+
+  /* Pohyb */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.1, 1);
+
+  /* Farba focus prstenca (v amber sekcii sa prepíše) */
+  --focus: var(--c-amber);
+}

@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Auto-servis M&amp;K Čadca | Diagnostika, servis, opravy, pneuservis</title>
+  <meta name="description" content="Auto-servis M&amp;K na Slovanskej ceste 5047 v Čadci. Diagnostika, servis vozidiel, opravy a pneuservis. Po–Pi 08:30–17:00, So 09:00–12:00. Volajte +421 903 567 844.">
+  <meta name="theme-color" content="#1b1c1e">
+
+  <!-- Open Graph
+       TODO po nasadení na doménu: pridať <meta property="og:url"> a <meta property="og:image">
+       (absolútna URL obrázka, ideálne 1200×630 px). -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="Auto-servis M&amp;K">
+  <meta property="og:title" content="Auto-servis M&amp;K Čadca">
+  <meta property="og:description" content="Diagnostika, servis vozidiel, opravy a pneuservis. Slovanská cesta 5047, Čadca. Volajte +421 903 567 844.">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Písma: Big Shoulders Display (nadpisy) + Archivo (text).
+       Pre GDPR-čistejšiu verziu ich stiahnite a hostujte lokálne (pozri README). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Big+Shoulders+Display:wght@700;800;900&display=swap">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Auto-servis M&K",
+    "telephone": "+421903567844",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Slovanská cesta 5047",
+      "postalCode": "022 01",
+      "addressLocality": "Čadca",
+      "addressCountry": "SK"
+    },
+    "areaServed": { "@type": "City", "name": "Čadca" },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:30",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "12:00"
+      }
+    ],
+    "hasMap": "https://maps.app.goo.gl/1DNMztBxNytkoT8j8"
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+
+  <!-- ===================== HLAVIČKA ===================== -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="Auto-servis M&amp;K, späť hore">
+        <span class="brand__mark">M<span>&amp;</span>K</span>
+        <span class="brand__name">Auto-servis</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Otvoriť menu" data-nav-toggle>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Hlavná navigácia" data-nav>
+        <ul class="site-nav__list">
+          <li style="--i:0"><a href="#sluzby" data-nav-link>Služby</a></li>
+          <li style="--i:1"><a href="#o-servise" data-nav-link>O servise</a></li>
+          <li style="--i:2"><a href="#kontakt" data-nav-link>Kontakt</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm site-nav__cta" style="--i:3" href="#kontakt" data-nav-link-cta>Objednať servis</a>
+        <p class="site-nav__meta" style="--i:4">
+          <a href="tel:+421903567844">+421 903 567 844</a><br>
+          Slovanská cesta 5047, Čadca
+        </p>
+      </nav>
+    </div>
+  </header>
+
+  <main id="obsah">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__wheel reveal reveal--fade" style="--i:4">
+        <img src="assets/wheel.svg" width="900" height="900" alt="Technický výkres kolesa s brzdovým kotúčom" fetchpriority="high">
+      </div>
+
+      <div class="container hero__inner">
+        <p class="tag reveal" style="--i:0">Auto-servis / Čadca</p>
+
+        <h1 class="hero__title" id="hero-title">
+          <span class="line reveal" style="--i:1">Keď auto</span>
+          <span class="line reveal" style="--i:2">potrebuje servis,</span>
+          <span class="line reveal" style="--i:3">nie výhovorky.</span>
+        </h1>
+
+        <div class="hero__lower">
+          <p class="hero__lede reveal" style="--i:5">
+            Servis vozidiel v Čadci. Zistíme, čo sa s autom deje, a povieme vám to priamo.
+          </p>
+          <div class="hero__actions reveal" style="--i:6">
+            <a class="btn btn--primary" href="#kontakt">Objednať servis</a>
+            <a class="btn btn--ghost" href="tel:+421903567844">Zavolať</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__facts reveal" style="--i:7">
+        <dl class="container hero__facts-grid">
+          <div>
+            <dt>Adresa</dt>
+            <dd>Slovanská cesta 5047 · Čadca</dd>
+          </div>
+          <div>
+            <dt>Telefón</dt>
+            <dd><a href="tel:+421903567844">+421 903 567 844</a></dd>
+          </div>
+          <div>
+            <dt>Otvorené</dt>
+            <dd class="status" data-hours-status data-state="unknown">
+              <span class="status__dot" aria-hidden="true"></span>
+              <span data-hours-text>Po–Pi 08:30–17:00</span>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===================== SLUŽBY ===================== -->
+    <section class="section services" id="sluzby" aria-labelledby="services-title">
+      <div class="container">
+        <div class="services__head">
+          <h2 class="services__title" id="services-title">Služby</h2>
+          <p class="services__intro">Základné oblasti, s ktorými sa na nás môžete obrátiť.</p>
+        </div>
+
+        <ol class="service-list">
+          <li class="service" style="--body-w: 20rem">
+            <span class="service__no" aria-hidden="true">01</span>
+            <h3 class="service__name">Diagnostika</h3>
+            <div class="service__body">
+              <p class="service__lead">Najprv zistiť problém. Potom ho riešiť.</p>
+              <p>Svieti kontrolka alebo sa auto správa inak ako zvyčajne? Pozrieme sa, čo sa deje.</p>
+            </div>
+          </li>
+
+          <li class="service" style="--body-w: 24rem">
+            <span class="service__no" aria-hidden="true">02</span>
+            <h3 class="service__name">Servis vozidiel</h3>
+            <div class="service__body">
+              <p>Pravidelná údržba, aby ste sa na auto mohli spoľahnúť.</p>
+            </div>
+          </li>
+
+          <li class="service" style="--body-w: 18rem">
+            <span class="service__no" aria-hidden="true">03</span>
+            <h3 class="service__name">Opravy</h3>
+            <div class="service__body">
+              <p>Niečo sa pokazilo? Povieme vám, v čom je problém, a dohodneme ďalší postup.</p>
+            </div>
+          </li>
+
+          <li class="service" style="--body-w: 22rem">
+            <span class="service__no" aria-hidden="true">04</span>
+            <h3 class="service__name">Pneuservis</h3>
+            <div class="service__body">
+              <p>Výmena pneumatík a práca s kolesami.</p>
+            </div>
+          </li>
+        </ol>
+
+        <p class="services__note">
+          Nenašli ste svoj prípad v zozname? <a class="link" href="tel:+421903567844">Zavolajte</a> a povieme vám, či vám vieme pomôcť.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== O SERVISE ===================== -->
+    <section class="section about" id="o-servise" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <figure class="about__media">
+          <img src="assets/hub-detail.svg" width="600" height="750" loading="lazy" alt="Technický detail kolesovej príruby s piatimi skrutkami">
+        </figure>
+
+        <div class="about__content">
+          <h2 class="h-section" id="about-title">O servise</h2>
+          <p class="about__lead">Sme miestny autoservis v Čadci. Prídete s autom, my sa naň pozrieme.</p>
+          <div class="about__text">
+            <p>Auto-servis M&amp;K nájdete na Slovanskej ceste 5047. Žiadne dlhé úvody: popíšte nám, čo auto robí alebo čo mu chýba, a ideme na to.</p>
+            <p>Najrýchlejšie nás zastihnete telefonicky. Zavolajte, dohodneme sa, kedy prísť.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PREČO M&K ===================== -->
+    <section class="section why" id="preco" aria-labelledby="why-title">
+      <div class="container">
+        <h2 class="h-section why__title" id="why-title">Prečo M&amp;K</h2>
+
+        <ol class="why__list">
+          <li class="why__item">
+            <span class="why__no" aria-hidden="true">01</span>
+            <h3>Rýchla komunikácia</h3>
+            <p>Zavoláte, opíšete, čo sa deje, a dohodneme ďalší postup.</p>
+          </li>
+          <li class="why__item">
+            <span class="why__no" aria-hidden="true">02</span>
+            <h3>Praktický prístup</h3>
+            <p>Riešime to, čo auto naozaj potrebuje. Bez zbytočných okolkov.</p>
+          </li>
+          <li class="why__item">
+            <span class="why__no" aria-hidden="true">03</span>
+            <h3>Servis v Čadci</h3>
+            <p>Slovanská cesta 5047. Miestny servis pre Čadcu a okolie.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== KONTAKT / CTA ===================== -->
+    <section class="section cta" id="kontakt" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 class="cta__title" id="cta-title">
+          <span>Máte problém</span>
+          <span>s autom?</span>
+        </h2>
+
+        <div class="cta__row">
+          <p class="cta__copy">Zavolajte nám alebo nás navštívte v Čadci.</p>
+
+          <div class="cta__actions">
+            <a class="btn btn--dark" href="tel:+421903567844">Zavolať +421 903 567 844</a>
+            <a class="btn btn--outline-dark" href="https://maps.app.goo.gl/1DNMztBxNytkoT8j8" target="_blank" rel="noopener">
+              Naplánovať trasu<span class="sr-only"> (otvorí Google Maps v novom okne)</span>
+            </a>
+            <p class="cta__copy-number">
+              <button class="linkbtn" type="button" data-copy="+421 903 567 844" hidden>Kopírovať číslo</button>
+              <span class="cta__copy-msg" role="status" aria-live="polite" data-copy-msg></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HODINY + LOKALITA ===================== -->
+    <section class="section visit" id="navsteva" aria-label="Otváracie hodiny a poloha">
+      <div class="container visit__grid">
+
+        <div class="hours" aria-labelledby="hours-title">
+          <h2 class="h-section" id="hours-title">Otváracie hodiny</h2>
+
+          <p class="status hours__status" data-hours-status data-state="unknown">
+            <span class="status__dot" aria-hidden="true"></span>
+            <span data-hours-text>Po–Pi 08:30–17:00, So 09:00–12:00</span>
+          </p>
+
+          <ul class="hours__list">
+            <li class="hours__row" data-days="1,2,3,4,5">
+              <span class="hours__day"><span aria-hidden="true">Po — Pi</span><span class="sr-only">Pondelok až piatok</span></span>
+              <span class="hours__time"><time datetime="08:30">08:30</time> — <time datetime="17:00">17:00</time></span>
+              <span class="hours__now" hidden>Dnes</span>
+            </li>
+            <li class="hours__row" data-days="6">
+              <span class="hours__day"><span aria-hidden="true">So</span><span class="sr-only">Sobota</span></span>
+              <span class="hours__time"><time datetime="09:00">09:00</time> — <time datetime="12:00">12:00</time></span>
+              <span class="hours__now" hidden>Dnes</span>
+            </li>
+            <li class="hours__row hours__row--closed" data-days="0">
+              <span class="hours__day"><span aria-hidden="true">Ne</span><span class="sr-only">Nedeľa</span></span>
+              <span class="hours__time">Zatvorené</span>
+              <span class="hours__now" hidden>Dnes</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="location" aria-labelledby="location-title">
+          <img class="location__contours" src="assets/contours.svg" width="900" height="700" alt="" loading="lazy">
+
+          <div class="location__content">
+            <h2 class="h-section" id="location-title">Kde nás nájdete</h2>
+            <address class="location__address">
+              <strong>Auto-servis M&amp;K</strong>
+              <span>Slovanská cesta 5047</span>
+              <span>022 01 Čadca</span>
+            </address>
+
+            <div class="location__actions">
+              <a class="btn btn--primary" href="https://maps.app.goo.gl/1DNMztBxNytkoT8j8" target="_blank" rel="noopener">
+                Navigovať<span class="sr-only"> (otvorí Google Maps v novom okne)</span>
+              </a>
+              <a class="link" href="tel:+421903567844">+421 903 567 844</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== PÄTA ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__name">Auto-servis M&amp;K</p>
+          <address>
+            Slovanská cesta 5047<br>
+            022 01 Čadca
+          </address>
+        </div>
+        <div>
+          <p class="site-footer__label">Telefón</p>
+          <p><a href="tel:+421903567844">+421 903 567 844</a></p>
+        </div>
+        <div>
+          <p class="site-footer__label">Otváracie hodiny</p>
+          <p>Po–Pi 08:30–17:00<br>So 09:00–12:00<br>Ne zatvorené</p>
+        </div>
+        <div>
+          <p class="site-footer__label">Poloha</p>
+          <p><a href="https://maps.app.goo.gl/1DNMztBxNytkoT8j8" target="_blank" rel="noopener">Google Maps<span class="sr-only"> (nové okno)</span></a></p>
+        </div>
+      </div>
+      <p class="site-footer__legal">© <span data-year>2026</span> Auto-servis M&amp;K, Čadca</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

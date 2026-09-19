@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750" fill="none">
+<title>Detail kolesovej príruby s piatimi skrutkami</title>
+<defs><pattern id="g" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" stroke="#ece9e2" stroke-width=".6" opacity=".10"/></pattern></defs>
+<rect width="600" height="750" fill="url(#g)"/>
+<path d="M26 54V26H54" stroke="#969aa1" stroke-width="1.5"/>
+<path d="M574 54V26H546" stroke="#969aa1" stroke-width="1.5"/>
+<path d="M26 696V724H54" stroke="#969aa1" stroke-width="1.5"/>
+<path d="M574 696V724H546" stroke="#969aa1" stroke-width="1.5"/>
+<path d="M0 400H600M300 0V750" stroke="#969aa1" stroke-width="1" stroke-dasharray="26 6 3 6" opacity=".6"/>
+<circle cx="300" cy="400" r="272" stroke="#ece9e2" stroke-width="2.5"/>
+<circle cx="300" cy="400" r="252" stroke="#ece9e2" stroke-width="1" opacity=".55"/>
+<circle cx="300" cy="400" r="108" stroke="#ece9e2" stroke-width="2.5"/>
+<circle cx="300" cy="400" r="92" stroke="#ece9e2" stroke-width="1" opacity=".6"/>
+<circle cx="300" cy="400" r="184" stroke="#f4a81d" stroke-width="1.6" stroke-dasharray="10 6"/>
+<path d="M300 292L300 100" stroke="#969aa1" stroke-width="1" stroke-dasharray="8 5" opacity=".7"/>
+<path d="M402.71 366.63L585.32 307.29" stroke="#969aa1" stroke-width="1" stroke-dasharray="8 5" opacity=".7"/>
+<path d="M363.48 487.37L476.34 642.71" stroke="#969aa1" stroke-width="1" stroke-dasharray="8 5" opacity=".7"/>
+<path d="M236.52 487.37L123.66 642.71" stroke="#969aa1" stroke-width="1" stroke-dasharray="8 5" opacity=".7"/>
+<path d="M197.29 366.63L14.68 307.29" stroke="#969aa1" stroke-width="1" stroke-dasharray="8 5" opacity=".7"/>
+<path d="M334.64 236L300 256L265.36 236L265.36 196L300 176L334.64 196Z" stroke="#f4a81d" stroke-width="3" fill="#1b1c1e"/>
+<circle cx="300" cy="216" r="26" stroke="#f4a81d" stroke-width="1.4"/>
+<circle cx="300" cy="216" r="9" stroke="#f4a81d" stroke-width="1.4"/>
+<path d="M509.64 363.14L474.99 383.14L440.35 363.14L440.35 323.14L474.99 303.14L509.64 323.14Z" stroke="#ece9e2" stroke-width="2.2" fill="#1b1c1e"/>
+<circle cx="474.99" cy="343.14" r="26" stroke="#ece9e2" stroke-width="1.4"/>
+<circle cx="474.99" cy="343.14" r="9" stroke="#ece9e2" stroke-width="1.4"/>
+<path d="M442.79 568.86L408.15 588.86L373.51 568.86L373.51 528.86L408.15 508.86L442.79 528.86Z" stroke="#ece9e2" stroke-width="2.2" fill="#1b1c1e"/>
+<circle cx="408.15" cy="548.86" r="26" stroke="#ece9e2" stroke-width="1.4"/>
+<circle cx="408.15" cy="548.86" r="9" stroke="#ece9e2" stroke-width="1.4"/>
+<path d="M226.49 568.86L191.85 588.86L157.21 568.86L157.21 528.86L191.85 508.86L226.49 528.86Z" stroke="#ece9e2" stroke-width="2.2" fill="#1b1c1e"/>
+<circle cx="191.85" cy="548.86" r="26" stroke="#ece9e2" stroke-width="1.4"/>
+<circle cx="191.85" cy="548.86" r="9" stroke="#ece9e2" stroke-width="1.4"/>
+<path d="M159.65 363.14L125.01 383.14L90.36 363.14L90.36 323.14L125.01 303.14L159.65 323.14Z" stroke="#ece9e2" stroke-width="2.2" fill="#1b1c1e"/>
+<circle cx="125.01" cy="343.14" r="26" stroke="#ece9e2" stroke-width="1.4"/>
+<circle cx="125.01" cy="343.14" r="9" stroke="#ece9e2" stroke-width="1.4"/>
+<path d="M300 262A138 138 0 0 1 431.25 357.36" stroke="#f4a81d" stroke-width="1.6"/>
+<path d="M300 262l14 5M300 262l14 -5" stroke="#f4a81d" stroke-width="1.6"/>
+<path d="M431.25 357.36l0.43 -14.86M431.25 357.36l-9.08 -11.77" stroke="#f4a81d" stroke-width="1.6"/>
+<path d="M286 400H314M300 386V414" stroke="#f4a81d" stroke-width="2"/>
+</svg>
