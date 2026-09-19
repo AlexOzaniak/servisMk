@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <title>Stránka nenájdená | Auto-servis M&amp;K</title>
+  <meta name="theme-color" content="#1b1c1e">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Big+Shoulders+Display:wght@700;800;900&display=swap">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <style>
+    .notfound {
+      min-height: 100svh;
+      display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+      gap: 1.5rem;
+    }
+    .notfound__code {
+      font-family: var(--font-display); font-weight: 900; line-height: 0.85;
+      font-size: clamp(6rem, 3rem + 14vw, 14rem); color: transparent;
+      -webkit-text-stroke: 2px var(--c-amber);
+    }
+    .notfound__title { font-size: clamp(1.75rem, 1.2rem + 2vw, 2.75rem); }
+    .notfound p { color: var(--c-steel); max-width: 40ch; }
+    .notfound__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+  <main class="container notfound">
+    <p class="notfound__code" aria-hidden="true">404</p>
+    <h1 class="notfound__title">Táto stránka neexistuje.</h1>
+    <p>Možno bol odkaz preklikaný nesprávne, alebo sa stránka presunula. Vráťte sa na hlavnú stránku, alebo nám rovno zavolajte.</p>
+    <div class="notfound__actions">
+      <a class="btn btn--primary" href="/">Späť na hlavnú stránku</a>
+      <a class="btn btn--ghost" href="tel:+421903567844">Zavolať +421 903 567 844</a>
+    </div>
+  </main>
+</body>
+</html>

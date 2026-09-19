@@ -1,0 +1,19 @@
+{
+  "name": "Auto-servis M&K",
+  "short_name": "M&K",
+  "description": "Auto-servis M&K Čadca — diagnostika, servis, opravy, pneuservis.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "sk",
+  "background_color": "#1b1c1e",
+  "theme_color": "#1b1c1e",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

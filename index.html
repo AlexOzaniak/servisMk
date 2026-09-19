@@ -16,8 +16,15 @@
   <meta property="og:site_name" content="Auto-servis M&amp;K">
   <meta property="og:title" content="Auto-servis M&amp;K Čadca">
   <meta property="og:description" content="Diagnostika, servis vozidiel, opravy a pneuservis. Slovanská cesta 5047, Čadca. Volajte +421 903 567 844.">
+  <meta property="og:url" content="https://VASA-DOMENA.sk/">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="mask-icon" href="assets/favicon.svg" color="#f4a81d">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- TODO po nasadení: nahraďte VASA-DOMENA.sk skutočnou doménou
+       (tu, v robots.txt aj v sitemap.xml). -->
+  <link rel="canonical" href="https://VASA-DOMENA.sk/">
 
   <!-- Písma: Big Shoulders Display (nadpisy) + Archivo (text).
        Pre GDPR-čistejšiu verziu ich stiahnite a hostujte lokálne (pozri README). -->
@@ -29,6 +36,28 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/sections.css">
+
+  <!-- Bez JS by bolo mobilné menu úplne neviditeľné (otvára ho iba main.js).
+       Táto poistka ho na malých šírkach zobrazí staticky, aby sa dalo navigovať. -->
+  <noscript>
+    <style>
+      .nav-toggle { display: none !important; }
+      .site-nav {
+        position: static !important;
+        visibility: visible !important;
+        clip-path: none !important;
+        padding: 1rem 0 !important;
+        background: none !important;
+      }
+      .site-nav__list { border-top: 0 !important; }
+      @media (max-width: 60em) {
+        .site-nav { flex-direction: column; align-items: flex-start; gap: 1rem; }
+        .site-nav__list { flex-direction: column; gap: 0.5rem; }
+        .site-nav__list a { font-size: 1.25rem !important; }
+        .site-nav__meta { display: block !important; }
+      }
+    </style>
+  </noscript>
 
   <script type="application/ld+json">
   {
@@ -308,6 +337,15 @@
                 Navigovať<span class="sr-only"> (otvorí Google Maps v novom okne)</span>
               </a>
               <a class="link" href="tel:+421903567844">+421 903 567 844</a>
+            </div>
+
+            <div class="location__map">
+              <iframe
+                src="https://www.google.com/maps?q=Auto-servis%20M%26K%2C%20Slovansk%C3%A1%20cesta%205047%2C%20022%2001%20%C4%8Cadca&output=embed"
+                title="Mapa: Auto-servis M&amp;K, Slovanská cesta 5047, Čadca"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                aria-label="Interaktívna mapa s polohou servisu"></iframe>
             </div>
           </div>
         </div>

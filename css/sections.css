@@ -352,6 +352,22 @@
 }
 .location__actions .link { font-weight: 600; }
 
+.location__map {
+  margin-top: clamp(1.75rem, 4vw, 3rem);
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 1px solid var(--c-rule);
+  background: var(--c-bay);
+}
+.location__map iframe {
+  width: 100%; height: 100%; border: 0; display: block;
+  /* tmavý štýl mapy bez potreby Google Maps štýlových API kľúčov */
+  filter: invert(90%) hue-rotate(180deg) contrast(85%) saturate(1.1);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .location__map iframe { transition: filter 0.3s; }
+}
+
 @media (max-width: 60em) {
   .visit__grid { grid-template-columns: 1fr; row-gap: clamp(3rem, 8vw, 5rem); }
   .hours { padding-right: 0; }
