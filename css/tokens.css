@@ -12,7 +12,7 @@
   --c-amber-hot: #ffc24d;
 
   /* Písma */
-  --font-display: "Big Shoulders Display", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
   --font-body:    "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   /* Veľkosti textu */
