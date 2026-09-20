@@ -62,7 +62,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AutoRepair",
+    "@type": ["AutoRepair", "LocalBusiness"],
     "name": "Auto-servis M&K",
     "telephone": "+421903567844",
     "address": {
@@ -112,11 +112,12 @@
       <nav class="site-nav" id="site-nav" aria-label="Hlavná navigácia" data-nav>
         <ul class="site-nav__list">
           <li style="--i:0"><a href="#sluzby" data-nav-link>Služby</a></li>
-          <li style="--i:1"><a href="#o-servise" data-nav-link>O servise</a></li>
-          <li style="--i:2"><a href="#kontakt" data-nav-link>Kontakt</a></li>
+          <li style="--i:1"><a href="#recenzie" data-nav-link>Recenzie</a></li>
+          <li style="--i:2"><a href="#o-servise" data-nav-link>O servise</a></li>
+          <li style="--i:3"><a href="#kontakt" data-nav-link>Kontakt</a></li>
         </ul>
-        <a class="btn btn--primary btn--sm site-nav__cta" style="--i:3" href="#kontakt" data-nav-link-cta>Objednať servis</a>
-        <p class="site-nav__meta" style="--i:4">
+        <a class="btn btn--primary btn--sm site-nav__cta" style="--i:4" href="#kontakt" data-nav-link-cta>Objednať servis</a>
+        <p class="site-nav__meta" style="--i:5">
           <a href="tel:+421903567844">+421 903 567 844</a><br>
           Slovanská cesta 5047, Čadca
         </p>
@@ -178,7 +179,7 @@
         </div>
 
         <ol class="service-list">
-          <li class="service" style="--body-w: 20rem">
+          <li class="service">
             <span class="service__no" aria-hidden="true">01</span>
             <h3 class="service__name">Diagnostika</h3>
             <div class="service__body">
@@ -187,7 +188,7 @@
             </div>
           </li>
 
-          <li class="service" style="--body-w: 24rem">
+          <li class="service">
             <span class="service__no" aria-hidden="true">02</span>
             <h3 class="service__name">Servis vozidiel</h3>
             <div class="service__body">
@@ -195,7 +196,7 @@
             </div>
           </li>
 
-          <li class="service" style="--body-w: 18rem">
+          <li class="service">
             <span class="service__no" aria-hidden="true">03</span>
             <h3 class="service__name">Opravy</h3>
             <div class="service__body">
@@ -203,7 +204,7 @@
             </div>
           </li>
 
-          <li class="service" style="--body-w: 22rem">
+          <li class="service">
             <span class="service__no" aria-hidden="true">04</span>
             <h3 class="service__name">Pneuservis</h3>
             <div class="service__body">
@@ -215,6 +216,39 @@
         <p class="services__note">
           Nenašli ste svoj prípad v zozname? <a class="link" href="tel:+421903567844">Zavolajte</a> a povieme vám, či vám vieme pomôcť.
         </p>
+      </div>
+    </section>
+
+    <!-- ===================== RECENZIE ===================== -->
+    <section class="section reviews" id="recenzie" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="reviews__head">
+          <div>
+            <p class="tag">Skúsenosť zákazníkov</p>
+            <h2 class="h-section" id="reviews-title">Dôvera<br>na ceste</h2>
+          </div>
+          <div class="reviews__intro">
+            <p>Najlepšie o našej práci hovoria ľudia, ktorým sme pomohli. Vybrali sme niekoľko ich slov z Google recenzií.</p>
+            <a class="btn btn--ghost" href="https://maps.app.goo.gl/1DNMztBxNytkoT8j8" target="_blank" rel="noopener">
+              Pozrieť všetky recenzie<span class="sr-only"> na Google (otvorí nové okno)</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="reviews__grid">
+          <figure class="review">
+            <blockquote>„Neskutočne rýchly, ochotný, milý a profesionálny prístup. Isto doporučujem navštíviť.“</blockquote>
+            <figcaption>Marek Poliak <span>· Google recenzia</span></figcaption>
+          </figure>
+          <figure class="review review--featured">
+            <blockquote>„Boli ochotní prísť za nami a vyriešiť náš problém na mieste napriek tomu, že už zatvárali. Takýto prístup sa dnes už len tak nevidí.“</blockquote>
+            <figcaption>Branislav Masar <span>· Miestny sprievodca na Google</span></figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>„Rýchle vybavenie po ceste na dovolenku. Chalani ochotní, rýchli. Ďakujeme a odporúčame.“</blockquote>
+            <figcaption>Jana Růžičková <span>· Google recenzia</span></figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 

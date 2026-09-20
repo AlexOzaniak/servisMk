@@ -101,9 +101,10 @@
 .service-list { border-top: 1px solid var(--c-rule); }
 
 .service {
+  --body-w: 22rem;
   position: relative;
   display: grid; align-items: start;
-  grid-template-columns: 4.5rem minmax(0, 1fr) minmax(0, var(--body-w, 22rem));
+  grid-template-columns: 4.5rem minmax(0, 1fr) minmax(0, var(--body-w));
   column-gap: 2rem;
   padding-block: clamp(1.25rem, 2.6vw, 2.25rem);
   border-bottom: 1px solid var(--c-rule);
@@ -132,7 +133,10 @@
 }
 .service:hover .service__name { transform: translateX(0.6rem); }
 
-.service__body { padding-top: 0.6rem; color: var(--c-steel); }
+.service__body {
+  width: min(100%, var(--body-w));
+  padding-top: 0.6rem; color: var(--c-steel);
+}
 .service__body p + p { margin-top: 0.6rem; }
 .service__lead {
   font-size: 1.125rem; font-weight: 600; font-stretch: 90%; line-height: 1.35;
@@ -154,6 +158,38 @@
   .service { grid-template-columns: 1fr; row-gap: 0.25rem; }
   .service__no { padding-top: 0; }
   .service__name, .service__body { grid-column: 1; }
+}
+
+/* ==========================================================================
+   RECENZIE
+   ========================================================================== */
+.reviews { border-top: 1px solid var(--c-rule); background: var(--c-bay); }
+.reviews__head {
+  display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(16rem, 0.8fr);
+  gap: 2rem 5rem; align-items: end;
+}
+.reviews__head .tag { margin-bottom: 1.5rem; }
+.reviews__head .h-section { font-size: clamp(3.5rem, 1rem + 8vw, 8rem); }
+.reviews__intro { color: var(--c-steel); padding-bottom: 0.4rem; }
+.reviews__intro p { max-width: 30rem; }
+.reviews__intro .btn { margin-top: 1.5rem; }
+.reviews__grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+  margin-top: clamp(3rem, 7vw, 6rem); background: var(--c-rule);
+}
+.review { display: flex; flex-direction: column; min-height: 18rem; padding: clamp(1.5rem, 3vw, 2.5rem); background: var(--c-asphalt); }
+.review blockquote { max-width: 34ch; font-size: clamp(1.1rem, 1rem + 0.35vw, 1.35rem); font-weight: 600; line-height: 1.35; }
+.review figcaption { margin-top: auto; padding-top: 2rem; color: var(--c-chalk); font-size: var(--fs-small); font-weight: 700; }
+.review figcaption span { display: block; margin-top: 0.25rem; color: var(--c-steel); font-weight: 400; }
+.review--featured { background: var(--c-amber); color: var(--c-asphalt); }
+.review--featured figcaption, .review--featured figcaption span { color: var(--c-asphalt); }
+
+@media (max-width: 60em) {
+  .reviews__head { grid-template-columns: 1fr; gap: 1.5rem; }
+  .reviews__intro { padding-bottom: 0; }
+  .reviews__grid { grid-template-columns: 1fr; }
+  .review { min-height: 0; }
+  .review figcaption { margin-top: 2rem; }
 }
 
 /* ==========================================================================
